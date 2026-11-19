@@ -611,3 +611,447 @@ select {
     margin-left: 100px;
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+/* Prevent horizontal scrolling */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img, iframe, video {
+    max-width: 100%;
+}
+
+/* Laptop */
+@media (max-width: 1100px) {
+
+    .navbar {
+        padding: 10px 20px;
+        gap: 15px;
+    }
+
+    .items ul {
+        gap: 18px;
+    }
+
+    .img img {
+        width: 210px;
+        height: auto;
+    }
+
+    .row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .solutions {
+        grid-template-columns: 1fr 1.5fr;
+        padding: 50px 30px;
+        gap: 25px;
+    }
+
+    .handimg {
+        position: relative;
+        left: auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .mind {
+        position: static;
+    }
+
+    .aicard {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .card-a,
+    .card-b,
+    .card-c {
+        flex: 1 1 280px;
+        width: auto;
+        max-width: 350px;
+    }
+
+    .infocard {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .contact-form {
+        width: 55%;
+        margin: 0 20px;
+    }
+
+    .rimg {
+        max-width: 40%;
+        margin-left: 20px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    .navbar {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 16px;
+    }
+
+    .img img {
+        width: 220px;
+        height: auto;
+    }
+
+    .items {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .items ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 20px;
+    }
+
+    .firstsection {
+        margin-top: 0;
+        height: auto;
+        min-height: 340px;
+        padding: 50px 25px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .Artificialline {
+        font-size: clamp(30px, 6vw, 42px);
+    }
+
+    .firstsectiontext {
+        font-size: 20px;
+    }
+
+    .fbtn {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card {
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .cards {
+        padding: 20px;
+    }
+
+    .cardheading {
+        padding: 35px 15px;
+    }
+
+    .solutions {
+        grid-template-columns: 1fr;
+        padding: 45px 25px;
+        gap: 30px;
+    }
+
+    .handheading {
+        font-size: 29px;
+    }
+
+    .right {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item {
+        padding: 12px 5px;
+        text-align: left;
+    }
+
+    .headingbeforecard {
+        padding: 45px 25px;
+    }
+
+    .aicard {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .card-a,
+    .card-b,
+    .card-c {
+        flex: 1 1 260px;
+        height: 380px;
+    }
+
+    .capability {
+        padding: 50px 25px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .capability-text {
+        font-size: 23px;
+    }
+
+    .process {
+        padding: 45px 20px;
+    }
+
+    .process hr {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .planrobot {
+        position: static;
+        display: block;
+        width: 180px;
+        height: auto;
+        margin: 0 auto 20px;
+    }
+
+    .innovation-section {
+        padding: 45px 20px;
+    }
+
+    .innovation-container {
+        width: 100%;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .innovation-content,
+    .innovation-video {
+        width: 100%;
+    }
+
+    .innovation-video {
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .innovation-content h2 {
+        font-size: 28px;
+    }
+
+    .containercard {
+        height: auto;
+        min-height: 250px;
+    }
+
+    .lightblue {
+        padding: 45px 20px;
+    }
+
+    .infocard {
+        flex-wrap: wrap;
+        margin-top: 35px;
+    }
+
+    .getintouch {
+        flex-direction: column;
+        align-items: center;
+        padding: 25px 18px;
+        gap: 25px;
+    }
+
+    .contact-form {
+        width: 100%;
+        max-width: 600px;
+        margin: 0;
+        padding: 25px;
+    }
+
+    .rimg {
+        width: 80%;
+        max-width: 420px;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 10px 12px;
+    }
+
+    .items ul {
+        gap: 10px 14px;
+        font-size: 13px;
+    }
+
+    .firstsection {
+        min-height: 320px;
+        padding: 40px 18px;
+        gap: 18px;
+    }
+
+    .Artificialline {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .firstsectiontext {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .fbtn {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .firstsectionbtn1,
+    .firstsectionbtn2 {
+        font-size: 14px;
+        padding: 11px 14px;
+    }
+
+    .row {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        padding: 15px;
+    }
+
+    .card {
+        padding: 16px;
+        width: 100%;
+    }
+
+    .cardheading {
+        padding: 30px 10px;
+        font-size: 15px;
+    }
+
+    .lowercardtext {
+        padding: 12px 5px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .solutions {
+        padding: 35px 18px;
+    }
+
+    .handheading {
+        font-size: 25px;
+    }
+
+    .right {
+        grid-template-columns: 1fr;
+    }
+
+    .item {
+        gap: 12px;
+    }
+
+    .headingbeforecard {
+        padding: 35px 18px;
+    }
+
+    .aicard {
+        padding: 15px;
+    }
+
+    .card-a,
+    .card-b,
+    .card-c {
+        flex-basis: 100%;
+        width: 100%;
+        max-width: none;
+        height: 340px;
+    }
+
+    .capability {
+        padding: 40px 18px;
+    }
+
+    .capability-text {
+        font-size: 20px;
+    }
+
+    .process {
+        padding: 35px 15px;
+        font-size: 16px;
+    }
+
+    .innovation-section {
+        padding: 40px 16px;
+    }
+
+    .innovation-content h2 {
+        font-size: 24px;
+    }
+
+    .containercard {
+        padding: 30px 15px;
+    }
+
+    .lightblue {
+        padding: 35px 15px;
+    }
+
+    .infocard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ifcard {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        min-height: 180px;
+    }
+
+    .contact-form {
+        padding: 20px 15px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .agreement {
+        align-items: flex-start;
+    }
+
+    .slidecard {
+        margin-left: 0;
+    }
+
+    .sbtn {
+        width: 100%;
+    }
+}
